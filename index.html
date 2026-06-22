@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuojiayU_U - 个人网站</title>
+  <link rel="stylesheet" href="style.css?v=29">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">LuojiayU_U</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a href="#about">
+              <span class="en-text">about</span>
+              <span class="zh-text">关于</span>
+            </a>
+          </li>
+          <li>
+            <a href="#works">
+              <span class="en-text">works</span>
+              <span class="zh-text">作品</span>
+            </a>
+          </li>
+          <li>
+            <a href="#project">
+              <span class="en-text">project</span>
+              <span class="zh-text">项目</span>
+            </a>
+          </li>
+        </ul>
+        <div class="lang-switch">
+          <span class="lang-zh" id="btn-zh">中</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-en active" id="btn-en">En</span>
+        </div>
+        <button class="menu-toggle" aria-label="菜单">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 横向滚动容器 -->
+  <div class="horizontal-scroll">
+
+    <!-- 第一屏：Hero区域 -->
+    <section class="panel hero" id="about">
+      <div class="hero-content">
+        <h1 class="hero-greeting">
+          <span class="en-text">HI,</span>
+          <span class="zh-text">嗨，</span>
+        </h1>
+        <h2 class="hero-name">
+          <span class="en-text">I'm luojiayu</span>
+          <span class="zh-text">我是罗佳语</span>
+        </h2>
+        <p class="hero-description">
+          <span class="en-text">Mistakes do not equal<br>meaninglessness</span>
+          <span class="zh-text">错误不等于没有意义</span>
+        </p>
+        <div class="hero-cta">
+          <a href="#works" class="cta-link">
+            <span class="en-text">more about me →</span>
+            <span class="zh-text">了解更多 →</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="插画图片.jpg" alt="插画" class="illustration-img">
+      </div>
+    </section>
+
+    <!-- 第二屏：works -->
+    <section class="panel works" id="works">
+      <div class="works-layout">
+        <div class="works-illustration">
+          <img src="works插画.jpg" alt="works" class="works-img">
+        </div>
+        <div class="works-grid">
+          <div class="work-card card-1" data-bv="BV1FWvkB6EM4" style="background-image: url('covers/work1.jpg')">
+            <span class="play-icon">▶</span>
+          </div>
+          <div class="work-card card-2" data-bv="BV1147A6AEX9" style="background-image: url('covers/work2.jpg')">
+            <span class="play-icon">▶</span>
+          </div>
+          <div class="work-card card-3" data-bv="BV1Yo7N6nEGg" style="background-image: url('covers/work3.jpg')">
+            <span class="play-icon">▶</span>
+          </div>
+          <div class="work-card card-4" data-bv="BV1maEm6hEEc" style="background-image: url('covers/work4.jpg')">
+            <span class="play-icon">▶</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第三屏：project -->
+    <section class="panel project" id="project">
+      <div class="project-content">
+        <div class="project-layout">
+          <div class="project-info">
+            <h3 class="project-name">
+              <span class="en-text">Starbox</span>
+              <span class="zh-text">Starbox</span>
+            </h3>
+            <div class="project-tags">
+              <span class="tag">Claude Code</span>
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <div class="project-tabs">
+              <button class="tab-btn active" data-tab="why">Why</button>
+              <button class="tab-btn" data-tab="what">What</button>
+              <button class="tab-btn" data-tab="how">How</button>
+            </div>
+            <div class="project-desc">
+              <div class="tab-content active" id="tab-why">
+                <span class="en-text">Sometimes when I'm feeling down, I want to write something, but just writing without any response feels boring. I love chatting with AI. I've seen people making pen pals on social media, but I'm too shy to pour my heart out to strangers — I'm always afraid they're secretly judging me. One day it hit me: why not combine writing with AI? And so, Starbox was born.</span>
+                <span class="zh-text">有时候心情不好的时候会想写点什么，但只是单纯地写点什么又觉得有点无聊，希望能得到一点回应。我喜欢和AI聊天。我看见很多人都在社交软件上交笔友，但是我不好意思和别人说那么多话，而且我总害怕别人在心理评判我。有一天我突发奇想，为什么不能写点什么和AI结合在一起呢？于是它诞生了。</span>
+              </div>
+              <div class="tab-content" id="tab-what">
+                <span class="en-text">A website where AI writes back randomly. You pour out whatever's on your mind, and the system picks a random AI character to reply. Each character responds based on their own personality and backstory. You might get a reply that drives you crazy, or you might stumble upon a delightful surprise — like opening a blind box.</span>
+                <span class="zh-text">这是一个AI随机回信的网站。你写下你想说的话，系统会随机抽取一个AI角色回信。角色会根据他的人物设定和环境设定生成回信。可能会被他的回信气个半死，也可能会收获到意外之喜。像开盲盒一样。</span>
+              </div>
+              <div class="tab-content" id="tab-how">
+                <span class="en-text">I independently led the product definition and all design decisions. Built and deployed entirely with AI programming tools.</span>
+                <span class="zh-text">从产品定义到决策都是我独立主导的，通过AI编程工具完成开发和部署。</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://www.bilibili.com/video/BV1hN7M6XEYo" class="project-link" target="_blank">
+                <span class="en-text">Demo ▶</span>
+                <span class="zh-text">Demo ▶</span>
+              </a>
+              <a href="https://github.com/aki03-sns/starbox" class="project-link" target="_blank">
+                <span class="en-text">GitHub: github.com/aki03-sns/starbox</span>
+                <span class="zh-text">GitHub：github.com/aki03-sns/starbox</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-video">
+            <div class="video-card" data-bv="BV1hN7M6XEYo" style="background-image: url('covers/project.jpg')">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 视频弹窗 -->
+  <div class="video-modal" id="video-modal">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <div class="video-container">
+        <iframe id="video-iframe" src="" scrolling="no" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
