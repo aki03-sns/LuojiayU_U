@@ -713,9 +713,11 @@ body {
 
   .project-video {
     padding-top: 0;
+    width: 100%;
   }
 
   .video-card {
+    width: 100%;
     max-width: 100%;
   }
 
