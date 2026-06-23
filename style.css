@@ -603,7 +603,7 @@ body {
 
   .panel {
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: auto;
     height: auto;
     padding: 100px 20px 60px;
     flex-direction: column;
@@ -656,16 +656,34 @@ body {
     margin-bottom: 30px;
   }
 
+  .works-layout {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .works-illustration {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .work-card {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+  }
+
   .works-stack {
     flex-direction: column;
     align-items: center;
     gap: 25px;
     padding-left: 0;
-  }
-
-  .work-card {
-    width: 260px;
-    height: 180px;
   }
 
 
@@ -691,6 +709,10 @@ body {
 
   .project-desc {
     font-size: 1.2rem;
+  }
+
+  .project-video {
+    padding-top: 0;
   }
 
   .video-card {
